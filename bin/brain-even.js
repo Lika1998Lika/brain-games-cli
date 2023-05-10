@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-function getRandomArbitrary(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
+const getRandomArbitrary = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 const isEven = (num) => num % 2 === 0;
 
