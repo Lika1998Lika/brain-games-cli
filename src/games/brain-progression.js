@@ -17,7 +17,7 @@ const brainProgression = () => {
   const randomIndex = getRandomArbitrary(0, progression.length - 1);
   const correctAnswer = progression[randomIndex];
   progression[randomIndex] = '..';
-  const question = progression.join(', ');
+  const question = progression.join(' ');
   return [question, String(correctAnswer)];
 };
 
