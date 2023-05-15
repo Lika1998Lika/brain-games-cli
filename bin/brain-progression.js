@@ -1,15 +1,17 @@
 #!/usr/bin/env node
 import game from '../src/index.js';
-
-const getRandomArbitrary = (min, max) => Math.floor(Math.random() * (max - min) + min);
+import { getRandomArbitrary, minValue, maxValue } from '../src/utils.js';
 
 const rules = 'What number is missing in the progression?';
 
 const brainProgression = () => {
-  const startNumber = getRandomArbitrary(1, 10);
-  const step = getRandomArbitrary(1, 5);
+  const startNumber = getRandomArbitrary(minValue, maxValue);
+  const minStep = 1;
+  const maxStep = 5;
+  const progressionLength = 10;
+  const step = getRandomArbitrary(minStep, maxStep);
   const progression = [startNumber];
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < progressionLength; i += 1) {
     const nextNumber = progression[progression.length - 1] + step;
     progression.push(nextNumber);
   }

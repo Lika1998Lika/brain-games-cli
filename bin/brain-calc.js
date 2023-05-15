@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import game from '../src/index.js';
+import { getRandomArbitrary, minValue, maxValue } from '../src/utils.js';
 
-const getRandomArbitrary = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 const calcExpression = (operand1, operand2, symbol) => {
   switch (symbol) {
@@ -18,8 +18,8 @@ const calcExpression = (operand1, operand2, symbol) => {
 
 const rules = 'What is the result of the expression?';
 const brainCalc = () => {
-  const operand1 = getRandomArbitrary(1, 10);
-  const operand2 = getRandomArbitrary(1, 10);
+  const operand1 = getRandomArbitrary(minValue, maxValue);
+  const operand2 = getRandomArbitrary(minValue, maxValue);
   const symbols = ['+', '-', '*'];
   const randomIndex = getRandomArbitrary(0, symbols.length - 1);
   const symbol = symbols[randomIndex];
