@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { countRounds } from './utils';
+import { countRounds } from './utils.js';
 
 const game = (data, rules) => {
   console.log('Welcome to the Brain Games!');
