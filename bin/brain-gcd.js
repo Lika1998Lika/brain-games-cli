@@ -7,8 +7,8 @@ const gcdTwoNumbers = (a, b) => (!b ? a : gcdTwoNumbers(b, a % b));
 
 const rules = 'Find the greatest common divisor of given numbers.';
 const brainGcd = () => {
-  const number1 = getRandomArbitrary(1, 100);
-  const number2 = getRandomArbitrary(1, 100);
+  const number1 = getRandomArbitrary(1, 15);
+  const number2 = getRandomArbitrary(1, 15);
 
   const question = `${number1} ${number2}`;
   const correctAnswer = gcdTwoNumbers(number1, number2);
