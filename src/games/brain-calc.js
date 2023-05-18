@@ -1,7 +1,10 @@
-import { getRandomArbitrary, minValue, maxValue } from '../utils.js';
+import getRandomNumber from '../utils.js';
 import game from '../index.js';
 
-const calcExpression = (operand1, operand2, symbol) => {
+const minValue = 1;
+const maxValue = 100;
+
+const getResultExpression = (operand1, operand2, symbol) => {
   switch (symbol) {
     case '+':
       return operand1 + operand2;
@@ -10,20 +13,20 @@ const calcExpression = (operand1, operand2, symbol) => {
     case '*':
       return operand1 * operand2;
     default:
-      return 'Error';
+      return 'invalid symbol';
   }
 };
 
 const rules = 'What is the result of the expression?';
-const brainCalc = () => {
-  const operand1 = getRandomArbitrary(minValue, maxValue);
-  const operand2 = getRandomArbitrary(minValue, maxValue);
+const runGame = () => {
+  const operand1 = getRandomNumber(minValue, maxValue);
+  const operand2 = getRandomNumber(minValue, maxValue);
   const symbols = ['+', '-', '*'];
-  const randomIndex = getRandomArbitrary(0, symbols.length - 1);
+  const randomIndex = getRandomNumber(0, symbols.length - 1);
   const symbol = symbols[randomIndex];
   const question = `${operand1} ${symbol} ${operand2}`;
-  const correctAnswer = calcExpression(operand1, operand2, symbol);
+  const correctAnswer = getResultExpression(operand1, operand2, symbol);
   return [question, String(correctAnswer)];
 };
 
-export default () => game(brainCalc, rules);
+export default () => game(runGame, rules);
