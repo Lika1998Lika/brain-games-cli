@@ -71,6 +71,6 @@ brain-progression
 
 <a  href="https://asciinema.org/a/V42xa1mTFhw8vzHLMy1UaNPoV" target="_blank"><img src="https://asciinema.org/a/V42xa1mTFhw8vzHLMy1UaNPoV.svg" /></a>
 
-##### brain-progression
+##### brain-progressions
 
 <a  href="https://asciinema.org/a/aY4mIYd5PQLRiQxiCqYJqF7UZ" target="_blank"><img src="https://asciinema.org/a/aY4mIYd5PQLRiQxiCqYJqF7UZ.svg" /></a>

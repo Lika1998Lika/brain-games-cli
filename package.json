@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/Lika1998Lika/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Lika1998Lika/frontend-project-44/actions)",
+  "description": "This is a set of five simple math games with command-line interface [![Actions Status](https://github.com/Lika1998Lika/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Lika1998Lika/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "author": "",
+  "author": "Lika1998Lika",
   "license": "ISC",
   "dependencies": {
     "eslint": "^8.40.0",
