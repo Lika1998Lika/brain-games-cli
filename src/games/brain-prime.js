@@ -1,9 +1,6 @@
 import getRandomNumber from '../utils.js';
 import game from '../index.js';
 
-const minValue = 1;
-const maxValue = 100;
-
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
@@ -12,9 +9,11 @@ const isPrime = (num) => {
   }
   return num > 1;
 };
-const runGame = () => {
+const runBrainPrime = () => {
+  const minValue = 1;
+  const maxValue = 100;
   const question = getRandomNumber(minValue, maxValue);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
-export default () => game(runGame, rules);
+export default () => game(runBrainPrime, rules);

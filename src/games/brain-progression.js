@@ -1,12 +1,11 @@
 import getRandomNumber from '../utils.js';
 import game from '../index.js';
 
-const minValue = 1;
-const maxValue = 100;
-
 const rules = 'What number is missing in the progression?';
 
-const runGame = () => {
+const runBrainProgression = () => {
+  const minValue = 1;
+  const maxValue = 100;
   const startNumber = getRandomNumber(minValue, maxValue);
   const minStep = 1;
   const maxStep = 5;
@@ -24,4 +23,4 @@ const runGame = () => {
   return [question, String(correctAnswer)];
 };
 
-export default () => game(runGame, rules);
+export default () => game(runBrainProgression, rules);

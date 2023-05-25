@@ -1,9 +1,6 @@
 import getRandomNumber from '../utils.js';
 import game from '../index.js';
 
-const minValue = 1;
-const maxValue = 100;
-
 const getResultExpression = (operand1, operand2, symbol) => {
   switch (symbol) {
     case '+':
@@ -18,7 +15,9 @@ const getResultExpression = (operand1, operand2, symbol) => {
 };
 
 const rules = 'What is the result of the expression?';
-const runGame = () => {
+const runBrainCalc = () => {
+  const minValue = 1;
+  const maxValue = 100;
   const operand1 = getRandomNumber(minValue, maxValue);
   const operand2 = getRandomNumber(minValue, maxValue);
   const symbols = ['+', '-', '*'];
@@ -29,4 +28,4 @@ const runGame = () => {
   return [question, String(correctAnswer)];
 };
 
-export default () => game(runGame, rules);
+export default () => game(runBrainCalc, rules);
