@@ -4,13 +4,6 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/f5171970519115acfc99/maintainability)](https://codeclimate.com/github/Lika1998Lika/frontend-project-44/maintainability)
 
-<style> 
-a{ 
-   width: 200px; 
-   display: block 
-}
- </style>
-
 ## Description:
 
 ---
