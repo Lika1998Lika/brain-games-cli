@@ -10,7 +10,7 @@ const getResultExpression = (operand1, operand2, symbol) => {
     case '*':
       return operand1 * operand2;
     default:
-      return 'invalid symbol';
+      throw new Error(`Unknown operand: '${symbol}'!`);
   }
 };
 
