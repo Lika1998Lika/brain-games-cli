@@ -13,13 +13,9 @@ const makeProgression = (startNumber, step, progressionLength) => {
 };
 
 const runBrainProgression = () => {
-  const minValue = 1;
-  const maxValue = 100;
-  const minStep = 1;
-  const maxStep = 5;
   const progressionLength = 10;
-  const step = getRandomNumber(minStep, maxStep);
-  const startNumber = getRandomNumber(minValue, maxValue);
+  const step = getRandomNumber(1, 5);
+  const startNumber = getRandomNumber(1, 100);
   const progression = makeProgression(startNumber, step, progressionLength);
   const randomIndex = getRandomNumber(0, progression.length - 1);
   const correctAnswer = progression[randomIndex];

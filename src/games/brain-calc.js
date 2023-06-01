@@ -16,10 +16,8 @@ const getResultExpression = (operand1, operand2, symbol) => {
 
 const rules = 'What is the result of the expression?';
 const runBrainCalc = () => {
-  const minValue = 1;
-  const maxValue = 100;
-  const operand1 = getRandomNumber(minValue, maxValue);
-  const operand2 = getRandomNumber(minValue, maxValue);
+  const operand1 = getRandomNumber(1, 100);
+  const operand2 = getRandomNumber(1, 100);
   const symbols = ['+', '-', '*'];
   const randomIndex = getRandomNumber(0, symbols.length - 1);
   const symbol = symbols[randomIndex];

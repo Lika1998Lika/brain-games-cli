@@ -10,9 +10,7 @@ const isPrime = (num) => {
   return num > 1;
 };
 const runBrainPrime = () => {
-  const minValue = 1;
-  const maxValue = 100;
-  const question = getRandomNumber(minValue, maxValue);
+  const question = getRandomNumber(1, 100);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
